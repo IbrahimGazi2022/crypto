@@ -11,4 +11,11 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
+  background-color: #1B2226;
+  height: 100vh;
+}
+
+.wallet-btn {
+  padding: 13px 20px;
+  background: linear-gradient(90deg, rgb(60, 56, 255) 0%, rgb(120, 56, 255) 100%);
 }
