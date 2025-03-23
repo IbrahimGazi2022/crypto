@@ -1,6 +1,7 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
 @import "tailwindcss";
 
 @plugin "daisyui" {
@@ -18,4 +19,13 @@ body {
 .wallet-btn {
   padding: 13px 20px;
   background: linear-gradient(90deg, rgb(60, 56, 255) 0%, rgb(120, 56, 255) 100%);
+}
+
+.badge {
+  background: linear-gradient(103deg, rgb(60, 56, 255) 0%, rgb(140, 69, 255) 33.33%, rgb(255, 54, 199) 68.23%, rgb(255, 163, 54) 100%);
+}
+
+.card {
+  border-radius: 40px 40px 0px 0px;
+  background: linear-gradient(rgba(43, 46, 82, 0.95) 0%, rgba(43, 46, 82, 0) 100%);
 }
