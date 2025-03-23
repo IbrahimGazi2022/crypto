@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SideMenu from './SideMenu';
+import BlurBackdrop from './BlurBackdrop';
 
 const Manu = () => {
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+
     return (
         <div className='pt-6 flex justify-between align-center'>
             {/* Logo */}
@@ -31,10 +35,14 @@ const Manu = () => {
                 </ul>
                 <div className="flex items-center">
                     <button className='rounded-full text-white wallet-btn cursor-pointer'>CONNECT WALLET</button>
-                    <button className='bg-[#34364E] rounded-full ml-6 cursor-pointer'>
-                        <img src="../image/ham.svg" alt="" className="w-[50px]"/>
+                    <button className='bg-[#34364E] rounded-full ml-6 cursor-pointer' onClick={() => setIsOpenMenu(!isOpenMenu)}>
+                        <img src="../image/ham.svg" alt="" className="w-[50px]" />
                     </button>
+
+                    {/* Side Menu */}
                 </div>
+                    <SideMenu isOpen={isOpenMenu} onClose={() => setIsOpenMenu(false)} />
+                    <BlurBackdrop isOpen={isOpenMenu} onClose={() => setIsOpenMenu(false)} />
             </div>
         </div>
     );

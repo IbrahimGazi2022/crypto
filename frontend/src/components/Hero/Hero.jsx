@@ -5,7 +5,7 @@ const Hero = () => {
         <div className='grid grid-cols-2 gap-4 mt-16'>
             {/* Hero Left Side */}
             <div className="">
-                <div className='flex gap-6 bg-[#2C3A47] w-fit align-center rounded-full p-2 pr-4 pl-4 backdrop-sepia-0'>
+                <div className='flex items-center gap-6 bg-[#2C3A47] w-fit align-center rounded-full p-2 pr-4 pl-4 backdrop-sepia-0'>
                     <h4 className='text-white badge'>New</h4>
                     <p className='text-white text-sm'>New roadmap added for Phase 4 - 2025</p>
                 </div>
@@ -25,7 +25,7 @@ const Hero = () => {
 
             {/* Hero Left Side */}
             <div className="w-[400px] justify-self-end card">
-                
+
             </div>
         </div>
     );
